@@ -1,2 +1,35 @@
 Web programming with python, using code to generate webpages.
 
+back-end - part programmer touches (or developer)
+front-end - part that the user touches
+
+Flask - micro framework in python (django is another framework)
+
+for flask you need:
+
+app.py
+requirements.txt
+************************************************
+app.py
+
+from flask import Flask
+
+# tell flask to turn this variable into an application with the name app
+app = Flask(__name__) 
+
+@app.route("/")
+def index():
+  return "hello, world"
+
+********************************************************
+requirements.txt
+
+Flask
+*****************************************
+
+pip install -r requirements.txt
+
+The file requirements.txt lists are the required libraries a program needs to draw from.  pip install - ensures those libraries are downloaded
+
+
+
